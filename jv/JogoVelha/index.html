@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+
+<body onselectstart="return false" oncontextmenu="return false">
+    <div>
+        <h2>Bem-vindo ao nosso Jogo da Velha</h2>
+        <p id="data"></p>
+    </div>
+
+    <div id="area">
+        <table>
+            <tr>
+                <td class="td_Direita td_top"><button id="1" value="1" onclick="jogar('1')"></button></td>
+                <td class="td_top"><button id="2" value="2" onclick="jogar('2')"></button></td>
+                <td class="td_top"><button id="3" value="3" onclick="jogar('3')"></button></td>
+            </tr>
+            <tr>
+                <td class="td_Direita"><button id="4" value="4" onclick="jogar('4')"></button></td>
+                <td><button id="5" value="5" onclick="jogar('5')"></button></td>
+                <td><button id="6" value="6" onclick="jogar('6')"></button></td>
+            </tr>
+            <tr>
+                <td class="td_Direita"><button id="7" value="7" onclick="jogar('7')"></button></td>
+                <td><button id="8" value="8" onclick="jogar('8')"></button></td>
+                <td><button id="9" value="9" onclick="jogar('9')"></button></td>
+            </tr>
+        </table>
+        <button class="button" onclick="location.reload()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
